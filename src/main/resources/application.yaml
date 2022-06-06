@@ -1,0 +1,9 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - web
+        - prometheus
+server:
+  port: 8000
