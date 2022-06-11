@@ -3,7 +3,4 @@ management:
     web:
       exposure:
         include:
-        - web
         - prometheus
-server:
-  port: 8000
