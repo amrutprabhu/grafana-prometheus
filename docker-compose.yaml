@@ -2,7 +2,7 @@ services:
   prometheus:
       image: prom/prometheus:v2.35.0
       network_mode: host
-      container_name: monitoring_prometheus
+      container_name: prometheus
       restart: unless-stopped
       volumes:
         - ./data/prometheus/config:/etc/prometheus/
@@ -26,7 +26,7 @@ services:
     image: grafana/grafana-oss:8.5.2
     pull_policy: always
     network_mode: host
-    container_name: monitoring_grafana
+    container_name: grafana
     restart: unless-stopped
     user: root
     ports:
